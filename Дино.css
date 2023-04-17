@@ -1,0 +1,61 @@
+#game{
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  border-bottom: 3px solid;
+}
+#dino{
+  width: 50px;
+  height: 50px;
+  background-image: url("5265ed9d-2616-4c47-923f-509d7d84228f.jpg");
+  background-size: 100%;
+  position: relative;
+  top: 350px;
+}
+#kaktus{
+  width: 50px;
+  height: 50px;
+  background-image: url("7f070007-308a-4f6c-ac6c-a965ffa4649f.jpg");
+  background-size: 100%;
+  position: relative;
+  top: 300px;
+  left: 600px;
+  animation:kaktusrun 5s infinite linear;
+}
+#weather{
+  width: 50px;
+  height: 50px;
+  background-image: url("0_eb76f_b20a8bcf_orig.png");
+  background-size: 100%;
+  position: relative;
+  top: 50px;
+  left: 600px;
+  animation:kaktusrun 3s infinite linear;
+}
+#bird{
+  width: 50px;
+  height: 50px;
+  background-image: url("vorobej.png");
+  background-size: 100%;
+  position: relative;
+  top: 100px;
+  left: 600px;
+  animation:birdrun 3s infinite linear;
+}
+@keyframes kaktusrun {
+  from{left: 600px;}
+  to{left: -50px;}
+}
+.jump{
+  animation: dinojump 1s linear;
+}
+@keyframes dinojump {
+  0%{top: 350px;}
+  33%{top: 250px;}
+  66%{top: 300px;}
+  100%{top: 350px;}
+}
+@keyframes birdrun {
+  from{left: 1000px;}
+  to{left: 100px;}
+}
